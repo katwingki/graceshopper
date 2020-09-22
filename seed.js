@@ -1,6 +1,7 @@
 const { db, Book, Author } = require('./server/db')
+const test;
 
-const books = [
+const books= [
     {
         title: `Oxford International Primary Maths: Stage 4: Teacher's Guide 4`,
         shortdDescription: 'A problem solving approach to primary maths',
@@ -20,7 +21,7 @@ const books = [
         Pages: 272,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198418054.jpg',
         price: 30.99,
-        qty: 10, 
+        qty: 10,
 
     },
 
@@ -33,7 +34,7 @@ const books = [
         Pages: 224,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198418078.jpg',
         price: 30.99,
-        qty: 10, 
+        qty: 10,
 
     },
 
@@ -45,7 +46,7 @@ const books = [
         Pages: 232,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198417965.jpg',
         price: 30.99,
-        qty: 10, 
+        qty: 10,
 
     },
 
@@ -57,7 +58,7 @@ const books = [
         Pages: 256,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198417996.jpg',
         price: 30.99,
-        qty: 10, 
+        qty: 10,
 
     },
 
@@ -69,7 +70,7 @@ const books = [
         Pages: 184,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198418016.jpg',
         price: 33.99,
-        qty: 10, 
+        qty: 10,
 
     },
 
@@ -81,7 +82,7 @@ const books = [
         Pages: 96,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198365297.jpg',
         price: 7.99,
-        qty: 10, 
+        qty: 10,
 
     },
 
@@ -94,7 +95,7 @@ const books = [
         Pages: 88,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198365280.jpg',
         price: 7.99,
-        qty: 10, 
+        qty: 10,
 
     },
 
@@ -107,7 +108,7 @@ const books = [
         Pages: 96,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198365303.jpg',
         price: 8.99,
-        qty: 10, 
+        qty: 10,
 
     },
 
@@ -120,7 +121,7 @@ const books = [
         Pages: 96,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198365266.jpg',
         price: 6.99,
-        qty: 10, 
+        qty: 10,
 
     },
 
@@ -133,7 +134,7 @@ const books = [
         Pages: 96,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198376439.jpg',
         price: 6.99,
-        qty: 10, 
+        qty: 10,
 
     },
 
@@ -145,7 +146,7 @@ const books = [
         Pages: 96,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198376453.jpg',
         price: 6.99,
-        qty: 10, 
+        qty: 10,
 
     },
 
@@ -157,7 +158,7 @@ const books = [
         Pages: 96,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198376477.jpg',
         price: 7.50,
-        qty: 10, 
+        qty: 10,
 
     },
 
@@ -169,7 +170,7 @@ const books = [
         Pages: 96,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198376460.jpg',
         price: 7.50,
-        qty: 10, 
+        qty: 10,
 
     },
 
@@ -181,7 +182,7 @@ const books = [
         Pages: 96,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198376422.jpg',
         price: 6.99,
-        qty: 10, 
+        qty: 10,
 
     },
 
@@ -193,7 +194,7 @@ const books = [
         Pages: 96,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198376446.jpg',
         price: 6.99,
-        qty: 10, 
+        qty: 10,
 
     },
 
@@ -205,7 +206,7 @@ const books = [
         Pages: 500,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198365334.jpg',
         price: 71.99,
-        qty: 10, 
+        qty: 10,
 
     },
 
@@ -217,7 +218,7 @@ const books = [
         Pages: 500,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198394921.jpg',
         price: 112.99,
-        qty: 10, 
+        qty: 10,
 
     },
 
@@ -229,7 +230,7 @@ const books = [
         Pages: 500,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198394891.jpg',
         price: 112.99,
-        qty: 10, 
+        qty: 10,
 
     },
 
@@ -241,10 +242,10 @@ const books = [
         Pages: 500,
         imageUrl: 'https://global.oup.com/education/covers/oxed/medium/9780198394907.jpg',
         price: 112.99,
-        qty: 10, 
+        qty: 10,
 
     },
-    
+
 
 ]
 
@@ -263,9 +264,9 @@ const seed = async () => {
                 return Book.create(book)
             })
         )
-    
-        
-        
+
+
+
     } catch (error) {
         console.log(error)
     }
